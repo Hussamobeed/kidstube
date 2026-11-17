@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كيدز تيوب</string>
+    <string name="home_subtitle">فيديوهاتك، جاهزة للمشاهدة دون إنترنت</string>
+    <string name="refresh_videos">تحديث</string>
+    <string name="no_videos_hint">لا توجد فيديوهات بعد. انسخ الفيديوهات إلى التلفاز ثم اختر «تحديث».</string>
+    <string name="permission_needed">اسمح بالوصول إلى الفيديوهات لعرض الملفات المخزنة على هذا الجهاز.</string>
+    <string name="video_thumbnail">صورة مصغّرة للفيديو</string>
+    <string name="local_badge">الفيديوهات محلية فقط</string>
+    <string name="check_updates">التحقق من التحديثات</string>
+    <string name="update_checking">جارٍ التحقق من تحديث التطبيق…</string>
+    <string name="update_check_failed">تعذّر التحقق من التحديثات. حاول لاحقًا.</string>
+    <string name="update_already_current">كيدز تيوب محدّث.</string>
+    <string name="update_available_title">يتوفر تحديث لكيدز تيوب</string>
+    <string name="update_available_message">الإصدار %1$s جاهز. هل تريد تنزيله الآن؟ لن يتم تنزيل أي فيديوهات.</string>
+    <string name="update_download_install">تنزيل وتثبيت</string>
+    <string name="update_later">لاحقًا</string>
+    <string name="update_downloading">جارٍ تنزيل تحديث التطبيق…</string>
+    <string name="update_download_failed">فشل التنزيل. حاول لاحقًا.</string>
+    <string name="update_signature_mismatch">هذا التحديث غير موقّع للتطبيق. لم يتم تثبيته.</string>
+    <string name="install_permission_title">السماح بتحديثات كيدز تيوب</string>
+    <string name="install_permission_message">يحتاج Android إلى إذن لتثبيت التحديثات من هذا المصدر. اسمح لكيدز تيوب ثم عُد إلى التطبيق.</string>
+    <string name="install_permission_button">فتح الإعدادات</string>
+    <string name="update_install_failed">تعذّر على Android فتح أداة التثبيت.</string>
+</resources>

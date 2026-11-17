@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KidsTube</string>
+    <string name="home_subtitle">Your videos, ready offline</string>
+    <string name="refresh_videos">Refresh</string>
+    <string name="no_videos_hint">No videos found yet. Copy videos to your TV, then choose Refresh.</string>
+    <string name="permission_needed">Allow video access to show videos stored on this device.</string>
+    <string name="video_thumbnail">Video thumbnail</string>
+    <string name="local_badge">VIDEOS LOCAL ONLY</string>
+    <string name="check_updates">Check updates</string>
+    <string name="update_checking">Checking for app updates…</string>
+    <string name="update_check_failed">Could not check for updates. Try again later.</string>
+    <string name="update_already_current">KidsTube is up to date.</string>
+    <string name="update_available_title">KidsTube update available</string>
+    <string name="update_available_message">Version %1$s is ready. Download it now? Videos will not be downloaded.</string>
+    <string name="update_download_install">Download and install</string>
+    <string name="update_later">Later</string>
+    <string name="update_downloading">Downloading the app update…</string>
+    <string name="update_download_failed">Download failed. Try again later.</string>
+    <string name="update_signature_mismatch">This update is not signed for this app. It was not installed.</string>
+    <string name="install_permission_title">Allow KidsTube updates</string>
+    <string name="install_permission_message">Android needs permission to install updates from this source. Allow KidsTube, then return here.</string>
+    <string name="install_permission_button">Open settings</string>
+    <string name="update_install_failed">Android could not open the installer.</string>
+</resources>

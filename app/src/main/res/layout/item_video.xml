@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_background"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/videoThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/thumbnail_placeholder"
+                android:contentDescription="@string/video_thumbnail"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/videoDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="6dp"
+                android:background="@drawable/duration_badge"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:ignore="SmallSp"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingStart="10dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- White outline shown when the TV remote focuses this card -->
+    <View
+        android:id="@+id/cardHighlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_focus_border"
+        android:visibility="gone" />
+
+</FrameLayout>

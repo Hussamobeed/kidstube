@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="youtube_dark">#0F0F0F</color>
+    <color name="surface_card">#202020</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="thumbnail_placeholder">#303030</color>
+    <color name="brand_red">#FF0033</color>
+    <color name="focus_white">#FFFFFFFF</color>
+</resources>
