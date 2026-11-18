@@ -227,6 +227,7 @@ class PlayerActivity : AppCompatActivity() {
             handler.removeCallbacks(updateProgress)
             handler.post(updateProgress)
             showControls(requestFocus = true)
+            binding.playPauseButton.post { binding.playPauseButton.requestFocus() }
         }
     }
 
@@ -492,6 +493,13 @@ class PlayerActivity : AppCompatActivity() {
                     return true
                 }
                 scheduleControlsHide()
+            }
+            if (screen == Screen.PLAYING && controlsVisible &&
+                (event.keyCode == KeyEvent.KEYCODE_DPAD_CENTER ||
+                    event.keyCode == KeyEvent.KEYCODE_ENTER)) {
+                window.currentFocus?.performClick()
+                scheduleControlsHide()
+                return true
             }
         }
         return super.dispatchKeyEvent(event)
