@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="player_now_playing">NOW PLAYING · LOCAL VIDEO</string>
+    <string name="player_untitled">Untitled video</string>
+    <string name="player_previous">Previous</string>
+    <string name="player_previous_accessibility">Previous video, or restart this video</string>
+    <string name="player_play">Play</string>
+    <string name="player_pause">Pause</string>
+    <string name="player_next">Next</string>
+    <string name="player_next_accessibility">Next video</string>
+    <string name="player_seek_accessibility">Seek in video</string>
+    <string name="player_repeat_on">Repeat one: On</string>
+    <string name="player_repeat_off">Repeat one: Off</string>
+    <string name="player_repeat_on_accessibility">Repeat one is on. Select to turn off.</string>
+    <string name="player_repeat_off_accessibility">Repeat one is off. Select to turn on.</string>
+    <string name="player_autoplay_on">Autoplay: On</string>
+    <string name="player_autoplay_off">Autoplay: Off</string>
+    <string name="player_autoplay_on_accessibility">Autoplay next is on. Select to turn off.</string>
+    <string name="player_autoplay_off_accessibility">Autoplay next is off. Select to turn on.</string>
+    <string name="player_finished">Video finished</string>
+    <string name="player_replay">Replay</string>
+    <string name="player_retry">Try again</string>
+    <string name="player_up_next">Up next</string>
+    <string name="player_more_videos">More local videos</string>
+    <string name="player_other_videos">Other local videos</string>
+    <string name="player_play_video_accessibility">Play %1$s</string>
+    <string name="player_cancel_autoplay">Cancel autoplay</string>
+    <string name="player_autoplay_canceled">Autoplay canceled. Choose a video or replay.</string>
+    <string name="player_autoplay_disabled">Autoplay is off. Choose a video or replay.</string>
+    <string name="player_end_of_list">End of the list. Choose another video or replay.</string>
+    <string name="player_only_video">This is the only video. Choose replay to watch it again.</string>
+    <string name="player_error_title">Can’t play this video</string>
+    <string name="player_error_message">This local video could not be played. Try again or choose another video.</string>
+    <plurals name="player_countdown">
+        <item quantity="one">Next video starts in %1$d second</item>
+        <item quantity="other">Next video starts in %1$d seconds</item>
+    </plurals>
+</resources>

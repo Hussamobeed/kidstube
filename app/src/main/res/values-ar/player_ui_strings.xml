@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="player_now_playing">قيد التشغيل · فيديو محلي</string>
+    <string name="player_untitled">فيديو بلا عنوان</string>
+    <string name="player_previous">السابق</string>
+    <string name="player_previous_accessibility">الفيديو السابق، أو إعادة تشغيل هذا الفيديو</string>
+    <string name="player_play">تشغيل</string>
+    <string name="player_pause">إيقاف مؤقت</string>
+    <string name="player_next">التالي</string>
+    <string name="player_next_accessibility">الفيديو التالي</string>
+    <string name="player_seek_accessibility">التنقل داخل الفيديو</string>
+    <string name="player_repeat_on">تكرار فيديو واحد: مفعّل</string>
+    <string name="player_repeat_off">تكرار فيديو واحد: متوقف</string>
+    <string name="player_repeat_on_accessibility">تكرار فيديو واحد مفعّل. اضغط لإيقافه.</string>
+    <string name="player_repeat_off_accessibility">تكرار فيديو واحد متوقف. اضغط لتفعيله.</string>
+    <string name="player_autoplay_on">التشغيل التلقائي: مفعّل</string>
+    <string name="player_autoplay_off">التشغيل التلقائي: متوقف</string>
+    <string name="player_autoplay_on_accessibility">التشغيل التلقائي للفيديو التالي مفعّل. اضغط لإيقافه.</string>
+    <string name="player_autoplay_off_accessibility">التشغيل التلقائي للفيديو التالي متوقف. اضغط لتفعيله.</string>
+    <string name="player_finished">انتهى الفيديو</string>
+    <string name="player_replay">إعادة التشغيل</string>
+    <string name="player_retry">إعادة المحاولة</string>
+    <string name="player_up_next">التالي</string>
+    <string name="player_more_videos">المزيد من الفيديوهات المحلية</string>
+    <string name="player_other_videos">فيديوهات محلية أخرى</string>
+    <string name="player_play_video_accessibility">تشغيل %1$s</string>
+    <string name="player_cancel_autoplay">إلغاء التشغيل التلقائي</string>
+    <string name="player_autoplay_canceled">أُلغي التشغيل التلقائي. اختر فيديو أو أعد التشغيل.</string>
+    <string name="player_autoplay_disabled">التشغيل التلقائي متوقف. اختر فيديو أو أعد التشغيل.</string>
+    <string name="player_end_of_list">نهاية القائمة. اختر فيديو آخر أو أعد التشغيل.</string>
+    <string name="player_only_video">هذا هو الفيديو الوحيد. اختر إعادة التشغيل لمشاهدته مرة أخرى.</string>
+    <string name="player_error_title">تعذّر تشغيل هذا الفيديو</string>
+    <string name="player_error_message">تعذّر تشغيل هذا الفيديو المحلي. أعد المحاولة أو اختر فيديو آخر.</string>
+    <plurals name="player_countdown">
+        <item quantity="zero">يبدأ الفيديو التالي خلال %1$d ثانية</item>
+        <item quantity="one">يبدأ الفيديو التالي خلال %1$d ثانية</item>
+        <item quantity="two">يبدأ الفيديو التالي خلال %1$d ثانيتين</item>
+        <item quantity="few">يبدأ الفيديو التالي خلال %1$d ثوانٍ</item>
+        <item quantity="many">يبدأ الفيديو التالي خلال %1$d ثانية</item>
+        <item quantity="other">يبدأ الفيديو التالي خلال %1$d ثانية</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_library_title">Your videos</string>
+    <string name="home_local_badge">ON THIS DEVICE</string>
+    <string name="home_card_subtitle">On this device</string>
+    <string name="home_loading_status">Finding local videos…</string>
+    <string name="home_refreshing_status">Refreshing local videos…</string>
+    <string name="home_loading_title">Finding your videos</string>
+    <string name="home_loading_body">Looking for videos stored on this device.</string>
+    <string name="home_empty_status">No videos on this device</string>
+    <string name="home_empty_title">Your library is empty</string>
+    <string name="home_permission_status">Video access is needed</string>
+    <string name="home_permission_title">Let’s find your videos</string>
+    <string name="home_permission_action">Allow video access</string>
+    <string name="home_permission_settings_action">Open app settings</string>
+    <string name="home_error_status">Unable to load local videos</string>
+    <string name="home_error_title">Could not load videos</string>
+    <string name="home_error_body">Check that storage is available, then try again.</string>
+    <string name="home_refresh_failed">Could not refresh. Your previous library is shown.</string>
+    <string name="home_retry_action">Try again</string>
+    <string name="home_untitled_video">Untitled video</string>
+    <string name="home_video_accessibility">%1$s, %2$s</string>
+    <plurals name="home_video_count">
+        <item quantity="one">%d video on this device</item>
+        <item quantity="other">%d videos on this device</item>
+    </plurals>
+</resources>

@@ -2,9 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/card_background"
+    android:layout_margin="7dp"
+    android:background="@drawable/home_card_background"
     android:clickable="true"
+    android:clipToOutline="true"
     android:focusable="true">
 
     <LinearLayout
@@ -13,15 +14,23 @@
         android:orientation="vertical">
 
         <FrameLayout
+            android:id="@+id/thumbnailFrame"
             android:layout_width="match_parent"
-            android:layout_height="120dp">
+            android:layout_height="120dp"
+            android:background="@drawable/home_thumbnail_background">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/home_placeholder_icon" />
 
             <ImageView
                 android:id="@+id/videoThumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/thumbnail_placeholder"
-                android:contentDescription="@string/video_thumbnail"
+                android:importantForAccessibility="no"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -29,16 +38,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
-                android:layout_margin="6dp"
-                android:background="@drawable/duration_badge"
+                android:layout_margin="8dp"
+                android:background="@drawable/home_duration_badge"
+                android:importantForAccessibility="no"
                 android:paddingStart="6dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingEnd="6dp"
-                android:paddingBottom="2dp"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"
-                tools:ignore="SmallSp"
-                xmlns:tools="http://schemas.android.com/tools" />
+                android:paddingBottom="3dp"
+                android:textColor="#FFFFFF"
+                android:textDirection="ltr"
+                android:textSize="13sp"
+                android:textStyle="bold" />
         </FrameLayout>
 
         <TextView
@@ -46,21 +56,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
+            android:importantForAccessibility="no"
             android:maxLines="2"
-            android:paddingStart="10dp"
-            android:paddingTop="8dp"
-            android:paddingEnd="10dp"
+            android:minLines="2"
+            android:paddingStart="12dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:paddingStart="12dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="12dp"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
+            android:text="@string/home_card_subtitle"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp" />
     </LinearLayout>
 
-    <!-- White outline shown when the TV remote focuses this card -->
     <View
         android:id="@+id/cardHighlight"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/card_focus_border"
+        android:background="@drawable/home_card_focus"
+        android:importantForAccessibility="no"
         android:visibility="gone" />
-
 </FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_library_title">فيديوهاتك</string>
+    <string name="home_local_badge">على هذا الجهاز</string>
+    <string name="home_card_subtitle">على هذا الجهاز</string>
+    <string name="home_loading_status">جارٍ البحث عن الفيديوهات المحلية…</string>
+    <string name="home_refreshing_status">جارٍ تحديث الفيديوهات المحلية…</string>
+    <string name="home_loading_title">جارٍ البحث عن فيديوهاتك</string>
+    <string name="home_loading_body">نبحث عن الفيديوهات المخزنة على هذا الجهاز.</string>
+    <string name="home_empty_status">لا توجد فيديوهات على هذا الجهاز</string>
+    <string name="home_empty_title">مكتبتك فارغة</string>
+    <string name="home_permission_status">يلزم السماح بالوصول إلى الفيديوهات</string>
+    <string name="home_permission_title">اعثر على فيديوهاتك</string>
+    <string name="home_permission_action">السماح بالوصول إلى الفيديوهات</string>
+    <string name="home_permission_settings_action">فتح إعدادات التطبيق</string>
+    <string name="home_error_status">تعذّر تحميل الفيديوهات المحلية</string>
+    <string name="home_error_title">تعذّر تحميل الفيديوهات</string>
+    <string name="home_error_body">تحقق من توفر مساحة التخزين ثم حاول مجددًا.</string>
+    <string name="home_refresh_failed">تعذّر التحديث. تظهر مكتبتك السابقة.</string>
+    <string name="home_retry_action">المحاولة مجددًا</string>
+    <string name="home_untitled_video">فيديو بلا عنوان</string>
+    <string name="home_video_accessibility">%1$s، %2$s</string>
+    <plurals name="home_video_count">
+        <item quantity="zero">%d فيديو على هذا الجهاز</item>
+        <item quantity="one">فيديو واحد على هذا الجهاز</item>
+        <item quantity="two">فيديوهان على هذا الجهاز</item>
+        <item quantity="few">%d فيديوهات على هذا الجهاز</item>
+        <item quantity="many">%d فيديو على هذا الجهاز</item>
+        <item quantity="other">%d فيديو على هذا الجهاز</item>
+    </plurals>
+</resources>
