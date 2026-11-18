@@ -11,6 +11,7 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.FileProvider
+import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File
 import java.io.FileOutputStream
@@ -67,20 +68,24 @@ class AppUpdateManager(private val activity: MainActivity) {
         connection.setRequestProperty("User-Agent", "KidsTube-Android")
         return try {
             if (connection.responseCode !in 200..299) return null
-            val json = JSONObject(connection.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() })
-            val tag = json.optString("tag_name")
-            val code = versionCodeForTag(tag) ?: return null
-            val assets = json.optJSONArray("assets") ?: return null
-            for (index in 0 until assets.length()) {
-                val asset = assets.optJSONObject(index) ?: continue
-                if (asset.optString("name") == APK_ASSET_NAME) {
+            val releases = JSONArray(connection.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() })
+            var best: Release? = null
+            for (index in 0 until releases.length()) {
+                val release = releases.optJSONObject(index) ?: continue
+                if (release.optBoolean("draft") || release.optBoolean("prerelease")) continue
+                val tag = release.optString("tag_name")
+                val code = versionCodeForTag(tag) ?: continue
+                val assets = release.optJSONArray("assets") ?: continue
+                for (assetIndex in 0 until assets.length()) {
+                    val asset = assets.optJSONObject(assetIndex) ?: continue
+                    if (asset.optString("name") != APK_ASSET_NAME) continue
                     val url = asset.optString("browser_download_url")
-                    if (url.startsWith(RELEASE_DOWNLOAD_PREFIX)) {
-                        return Release(tag.removePrefix("v"), code, url)
-                    }
+                    if (!url.startsWith(RELEASE_DOWNLOAD_PREFIX)) continue
+                    val candidate = Release(tag.removePrefix("v"), code, url)
+                    if (best == null || candidate.versionCode > best!!.versionCode) best = candidate
                 }
             }
-            null
+            best
         } finally {
             connection.disconnect()
         }
@@ -243,7 +248,7 @@ class AppUpdateManager(private val activity: MainActivity) {
     private data class Release(val versionName: String, val versionCode: Long, val downloadUrl: String)
 
     companion object {
-        private const val RELEASES_API = "https://api.github.com/repos/Hussamobeed/kidstube/releases/latest"
+        private const val RELEASES_API = "https://api.github.com/repos/Hussamobeed/kidstube/releases?per_page=20"
         private const val RELEASE_DOWNLOAD_PREFIX = "https://github.com/Hussamobeed/kidstube/releases/download/"
         private const val APK_ASSET_NAME = "kidstube-release.apk"
         private const val APK_MIME_TYPE = "application/vnd.android.package-archive"
